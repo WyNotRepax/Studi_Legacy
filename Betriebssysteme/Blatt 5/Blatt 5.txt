@@ -1,0 +1,16 @@
+2. 
+a.) Was passiert, wenn der erste Prozess mehr Daten produziert als der zweite Prozess konsumieren kann?
+Programm wartet auf Ende des Ersten Prozesses.
+
+b.) Was passiert, wenn sich keine Daten in der Pipe befinden?
+z.B.: ls – more in einem leeren folder-> Befehl wird nicht ausgeführt und neuer Prompt wird angezeigt.
+
+c.) Was passiert, wenn einer der Prozesse in der Pipe terminiert oder beendet wird?
+Wird z.b. der Befehl yes | cat -n ausgeführt, dann der yes-Prozess gekillt, so wird der normal abgebrochen und der Befehlsprompt erscheint wieder. 
+Wird allerdings der zweite Prozess in der Pipe gekillt, so muss auch der erste gekillt werden, bis der  Befehlsprompt wieder angezeigt wird.
+
+d.) Was passiert, wenn der Eltern-Prozess terminiert?
+Die Kindprozesse laufen weiter.
+
+e.) Wie kann die Richtung des Datentransfers zwischen den Prozessen verändert werden?
+In der Bash kann dies realisiert werden, indem man die Prozesse vertauscht, im Sourcecode kann man die Filedescriptoren tauschen, sodass Prozess 1 fd[1] schließt und Prozess 2 fd[0].

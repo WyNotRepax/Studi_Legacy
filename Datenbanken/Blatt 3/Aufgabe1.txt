@@ -1,0 +1,2 @@
+Bestellung müssen über Bestellungsnummer identifiziert werden.
+Kunden müssen über Kundennummer identifiziert werden.

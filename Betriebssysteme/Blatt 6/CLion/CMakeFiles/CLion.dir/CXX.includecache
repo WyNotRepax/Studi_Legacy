@@ -1,0 +1,26 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/main.cpp
+iostream
+-
+web_request.hpp
+/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/web_request.hpp
+
+include/web_request.h
+
+include/web_request.hpp
+exception
+-
+stdexcept
+-
+string
+-
+web_request.h
+include/web_request.h
+

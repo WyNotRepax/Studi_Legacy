@@ -1,0 +1,33 @@
+#!/bin/bash
+
+TRASHBIN=$HOME/.trashBin
+
+function remove {
+
+	ABSPATH=$(readlink -f $1)
+
+	if [ -f "$ABSPATH" ]; then
+		N=0
+		while
+			NAME=$(date "+%y%m%d%H%M%S")_$$_$N.dat
+			[ -e $TRASHBIN/$NAME ]
+		do
+			N=$(expr $N + 1)
+		done
+		mv $1 $TRASHBIN/$NAME
+		echo $NAME $ABSPATH >> $TRASHBIN/.dir
+	else
+		echo "Datei \"$ABSPATH\" existiert nicht oder ist keine Datei!"
+	fi
+}
+
+if [ ! -e $TRASHBIN ]; then
+	mkdir $TRASHBIN
+fi
+
+touch $TRASHBIN/.dir
+
+for FILE in $@
+	do
+		remove $FILE
+	done

@@ -1,0 +1,504 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+        <html lang="en">
+        <head><title>Welcome to LWN.net [LWN.net]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+        <link rel="icon" href="/images/favicon.png" type="image/png">
+        <link rel="alternate" type="application/rss+xml" title="LWN.net headlines" href="https://lwn.net/headlines/newrss">
+        <link rel="stylesheet" href="/CSS/lwn">
+<link rel="stylesheet" href="/CSS/nosub">
+<link rel="stylesheet" href="/CSS/pure-min">
+           <!--[if lte IE 8]>
+             <link rel="stylesheet" href="/CSS/grids-responsive-old-ie-min">
+           <![endif]-->
+           <!--[if gt IE 8]><!-->
+             <link rel="stylesheet" href="/CSS/grids-responsive-min">
+           <!--<![endif]-->
+           <link rel="stylesheet" href="/CSS/pure-lwn">
+           
+        
+<script type="text/javascript">var p="http",d="static";if(document.location.protocol=="https:"){p+="s";d="engine";}var z=document.createElement("script");z.type="text/javascript";z.async=true;z.src=p+"://"+d+".adzerk.net/ados.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(z,s);</script>
+<script type="text/javascript">
+var ados_keywords = ados_keywords || [];
+if( location.protocol=='https:' ) {
+        ados_keywords.push('T:SSL');
+} else {
+        ados_keywords.push('T:HTTP');
+}
+
+var ados = ados || {};
+ados.run = ados.run || [];
+ados.run.push(function() {
+
+ados_add_placement(4669, 20979, "azk13321_leaderboard", 4).setZone(16026);
+
+ados_add_placement(4669, 20979, "azk93271_right_zone", [5,10,6]).setZone(16027);
+
+ados_add_placement(4669, 20979, "azk31017_tracking", 20).setZone(20995);
+
+ados_keywords.push('S:Homepage');
+
+ados_setKeywords(ados_keywords.join(', ')); 
+ados_load();
+});</script>
+
+        </head>
+        <body bgcolor="#ffffff" link="Blue" VLINK="Green" alink="Green">
+        <a name="t"></a>
+<div id="menu"><a href="/"><img src="https://static.lwn.net/images/logo/barepenguin-70.png" class="logo"
+                 border="0" alt="LWN.net Logo">
+           <font class="logo">LWN<br>.net</font>
+           <font class="logobl">News from the source</font></a>
+           <a href="/"><img src="https://static.lwn.net/images/lcorner-ss.png" class="sslogo"
+                 border="0" alt="LWN"></a><div class="navmenu-container">
+           <ul class="navmenu">
+        <li><a class="navmenu" href="#t"><b>Content</b></a><ul><li><a href="/current/">Weekly Edition</a></li><li><a href="/Archives/">Archives</a></li><li><a href="/Search/">Search</a></li><li><a href="/Kernel/">Kernel</a></li><li><a href="/Security/">Security</a></li><li><a href="/Distributions/">Distributions</a></li><li><a href="/Calendar/">Events calendar</a></li><li><a href="/Comments/unread">Unread comments</a></li><li><hr></li><li><a href="/op/FAQ.lwn">LWN FAQ</a></li><li><a href="/op/AuthorGuide.lwn">Write for us</a></li></ul></li>
+</ul></div>
+</div> <!-- menu -->
+<div class="pure-g not-handset" style="margin-left: 10.5em">
+           <div class="not-print">
+             <div id="azk13321_leaderboard"></div>
+           </div>
+           </div>
+        <div class="topnav-container">
+<div class="not-handset"><form action="https://lwn.net/Login/" method="post" name="loginform"
+                 class="loginform">
+        <b>User:</b> <input type="text" name="Username" value="" size="8" /> <b>Password:</b> <input type="password" name="Password" size="8" /> <input type="hidden" name="target" value="" /> <input type="submit" name="submit" value="Log in" /></form> |
+           <form action="https://lwn.net/subscribe/" method="post" class="loginform">
+           <input type="submit" name="submit" value="Subscribe" />
+           </form> |
+           <form action="https://lwn.net/Login/newaccount" method="post" class="loginform">
+           <input type="submit" name="submit" value="Register" />
+           </form>
+        </div>
+               <div class="handset-only">
+               <a href="/subscribe/"><b>Subscribe</b></a> /
+               <a href="/Login/"><b>Log in</b></a> /
+               <a href="/Login/newaccount"><b>New account</b></a>
+               </div>
+               </div><div class="pure-grid maincolumn">
+<div class="lwn-u-1 pure-u-md-19-24">
+<div class="PageHeadline">
+<h1>Welcome to LWN.net</h1>
+</div>
+<div class="ArticleText">
+<div class="pure-u-1">
+       <blockquote style="margin-top: 0">
+       LWN.net is a reader-supported news site dedicated to producing the best
+       coverage from within the Linux and free software development communities.
+       See <a href="/op/FAQ.lwn">the LWN FAQ</a> for more information, and
+       please consider <a href="/subscribe/Info">subscribing</a> to gain full
+       access and support our activities.
+       </blockquote>
+       <p>
+       </div><div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Some near-term arm64 hardening patches</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 18, 2019 18:36 UTC (Mon) by corbet</font>
+        <p>
+        The arm64 architecture is found at the core of many, if not most, mobile
+devices; that means that arm64 devices are destined to be the target of
+attackers worldwide.  That has led to a high level of interest in
+technologies that can harden these systems.  There are currently several
+such technologies, based in both hardware and software, that are being
+readied for the arm64 kernel; read on for a survey on what is
+coming.
+
+        <p>
+        <a href="/Articles/804982/">Full Story</a> (<a href="/Articles/804982/#Comments">comments: 9</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Two stable kernels</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 18, 2019 16:04 UTC (Mon) by ris</font>
+        <p>
+        Stable kernels <a href="/Articles/805085/">4.9.202</a> and <a
+href="/Articles/805086/">4.4.202</a> have been released. They both contain
+important fixes and users should upgrade.
+        <p>
+        <a href="/Articles/805084/">Comments (none posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Keeping memory contents secret</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 15, 2019 19:46 UTC (Fri) by corbet</font>
+        <p>
+        One of the many responsibilities of the operating system is to help
+processes keep secrets from each other.  Operating systems often fail in
+this regard, sometimes due to factors — such as hardware bugs and user-space
+vulnerabilities — that are beyond their direct control.  It is thus
+unsurprising that there is an increasing level of interest in ways to
+improve the ability to keep data secret, perhaps even from the operating
+system itself.  The <a
+href="/ml/linux-kernel/1572171452-7958-1-git-send-email-rppt@kernel.org/"><tt>MAP_EXCLUSIVE</tt></a>
+patch set from Mike Rapoport is one example of the work that is being done
+in this area; it also shows that the development community has not yet
+really begun to figure out how this type of feature should work.
+
+        <p>
+        <a href="/Articles/804658/">Full Story</a> (<a href="/Articles/804658/#Comments">comments: 13</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Monday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 18, 2019 15:53 UTC (Mon) by ris</font>
+        <p>
+        Security updates have been issued by <b>Debian</b> (angular.js, libapache2-mod-auth-openidc, mosquitto, postgresql-common, and thunderbird), <b>Fedora</b> (chromium, djvulibre, freetds, ghostscript, java-1.8.0-openjdk-aarch32, samba, thunderbird-enigmail, wpa_supplicant, and xen), <b>openSUSE</b> (go1.12, ImageMagick, and ucode-intel), <b>Oracle</b> (ghostscript and kernel), <b>Red Hat</b> (libcomps and sudo), <b>Slackware</b> (kernel), <b>SUSE</b> (microcode_ctl, slurm, and ucode-intel), and <b>Ubuntu</b> (mysql-5.7, mysql-8.0 and python-ecdsa).
+
+        <p>
+        <a href="/Articles/805083/">Full Story</a> (<a href="/Articles/805083/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] The Yocto Project 3.0 release</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Distributions] Posted Nov 14, 2019 19:26 UTC (Thu) by corbet</font>
+        <p>
+        The <a href="https://www.yoctoproject.org">Yocto Project</a> recently
+announced <a
+href="https://lists.yoctoproject.org/pipermail/yocto-announce/2019-October/000169.html">its 
+3.0 release</a>, maintaining the spring/fall cadence it has followed for the
+past nine years. As well as the expected updates, it contains new thinking on
+getting the best of two worlds: source builds and prebuilt binaries. This
+fits well into a landscape where reproducibility and software traceability,
+all the way through to device updates, are increasingly important to handle
+complex security issues.
+
+        <p>
+        <a href="/Articles/804640/">Full Story</a> (<a href="/Articles/804640/#Comments">comments: 5</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Kernel prepatch 5.4-rc8</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 18, 2019 14:06 UTC (Mon) by corbet</font>
+        <p>
+        As expected, <a href="/Articles/805037/">5.4-rc8</a> was released on
+November&nbsp;17 rather than the final 5.4 release.
+"<span>I'm not entirely sure we need an rc8, because last week was pretty
+calm despite the Intel hw workarounds landing. So I considered just
+making a final 5.4 and be done with it, but decided that there's no
+real downside to just doing the rc8 after having a release cycle that
+took a while to calm down.</span>"
+        <p>
+        <a href="/Articles/805038/">Comments (none posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] LWN.net Weekly Edition for November 14, 2019</b></div>
+        
+        <font size="-1">Posted Nov 14, 2019 0:04 UTC (Thu)</font><p>
+        The LWN.net Weekly Edition for November 14, 2019 is available.
+<p>
+        <b>Inside this week's LWN.net Weekly Edition</b>
+        <ul>
+<li> <a href="/Articles/804120/">Front</a>: Debian init system; Kernel email; 5.4 stats; Emulated iopl(); Automated Testing Summit
+            <li> <a href="/Articles/804122/">Briefs</a>: Intel CPU flaws; openSUSE not changing name; Bytecode Alliance; Rust 1.39; Quote; ...
+            <li> <a href="/Articles/804123/">Announcements</a>: Newsletters; conferences; security updates; kernel patches; ...
+            </ul>
+<a href="/Articles/804120/">Read more</a>
+<p>
+
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Friday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 15, 2019 14:42 UTC (Fri) by jake</font>
+        <p>
+        Security updates have been issued by <b>CentOS</b> (kernel), <b>Debian</b> (ghostscript, mesa, and postgresql-common), <b>Fedora</b> (chromium, php-robrichards-xmlseclibs, php-robrichards-xmlseclibs3, samba, scap-security-guide, and wpa_supplicant), <b>Mageia</b> (cpio, fribidi, libapreq2, python-numpy, webkit2, and zeromq), <b>openSUSE</b> (ImageMagick, kernel, libtomcrypt, qemu, ucode-intel, and xen), <b>Oracle</b> (kernel), <b>Red Hat</b> (ghostscript, kernel, and kernel-rt), <b>Scientific Linux</b> (ghostscript and kernel), <b>SUSE</b> (bash, enigmail, ghostscript, ImageMagick, kernel, libjpeg-turbo, openconnect, and squid), and <b>Ubuntu</b> (ghostscript, imagemagick, and postgresql-common).
+
+        <p>
+        <a href="/Articles/804904/">Full Story</a> (<a href="/Articles/804904/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Analyzing kernel email</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 13, 2019 22:54 UTC (Wed) by jake</font>
+        <p>
+        Digging into the email that provides the cornerstone of Linux kernel
+development is an endeavor that has become more popular over the last few
+years.  There are some practical reasons for analyzing the
+kernel mailing lists and for correlating that information with the patches
+that actually reach the mainline, including tracking the path that
+patches take—or don't take.  Three researchers reported on some efforts
+they have made on kernel email analysis at the <a
+href="https://events19.linuxfoundation.org/events/embedded-linux-conference-europe-2019/">2019
+Embedded Linux Conference Europe</a> (ELCE), held in late October in Lyon, France.
+
+        <p>
+        <a href="/Articles/804511/">Full Story</a> (<a href="/Articles/804511/#Comments">comments: none</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Cook: Security things in Linux v5.3</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 15, 2019 13:10 UTC (Fri) by corbet</font>
+        <p>
+        Kees Cook <a
+href="https://outflux.net/blog/archives/2019/11/14/security-things-in-linux-v5-3/">catches
+up with the security improvements</a> in the 5.3 kernel.
+"<span>In recent exploits, one of the steps for making the attacker’s life
+easier is to disable CPU protections like Supervisor Mode Access (and
+Execute) Prevention (SMAP and SMEP) by finding a way to write to CPU
+control registers to disable these features. For example, CR4 controls SMAP
+and SMEP, where disabling those would let an attacker access and execute
+userspace memory from kernel code again, opening up the attack to much
+greater flexibility. CR0 controls Write Protect (WP), which when disabled
+would allow an attacker to write to read-only memory like the kernel code
+itself. Attacks have been using the kernel’s CR4 and CR0 writing functions
+to make these changes (since it’s easier to gain that level of execute
+control), but now the kernel will attempt to 'pin' sensitive bits in CR4
+and CR0 to avoid them getting disabled. This forces attacks to do more work
+to enact such register changes going forward.</span>"
+        <p>
+        <a href="/Articles/804849/#Comments">Comments (3 posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] The 2019 Automated Testing Summit</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Development] Posted Nov 13, 2019 17:04 UTC (Wed) by jake</font>
+        <p>
+        This year saw the second edition of the <a
+href="https://events19.linuxfoundation.org/events/ats-2019/">Automated
+Testing Summit</a> (ATS) and the first that was open to all.  <a
+href="https://elinux.org/Automated_Testing_Summit_2018">Last year's ATS</a> 
+was an invitation-only
+gathering of around 35 developers (that was described in an <a
+href="/Articles/771782/">LWN article</a>),
+while this year's event attracted
+around 50 attendees;  both were held in conjunction with the
+Embedded Linux Conference Europe (ELCE), in Edinburgh, Scotland for 2018
+and in Lyon, France this year.  The basic problem has not changed—more
+collaboration is needed between the different kernel testing systems—but
+the starting points have been identified and work is progressing, albeit
+slowly.  Part of the problem, of course, is that all of these testing
+efforts have their own constituencies and customers, who must be kept up
+and running, even while any of this collaborative development is going on.
+
+        <p>
+        <a href="/Articles/804050/">Full Story</a> (<a href="/Articles/804050/#Comments">comments: none</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Thursday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 14, 2019 14:00 UTC (Thu) by jake</font>
+        <p>
+        Security updates have been issued by <b>Arch Linux</b> (kernel, linux-lts, and linux-zen), <b>CentOS</b> (kernel, sudo, and thunderbird), <b>Debian</b> (linux-4.9), <b>Fedora</b> (samba), <b>openSUSE</b> (apache2-mod_auth_openidc, kernel, qemu, rsyslog, and ucode-intel), <b>Oracle</b> (kernel), <b>Red Hat</b> (kernel and kernel-rt), <b>Scientific Linux</b> (kernel), <b>SUSE</b> (kernel and microcode_ctl), and <b>Ubuntu</b> (kernel, libjpeg-turbo, linux, linux-hwe, linux-oem, linux, linux-hwe, linux-oem-osp1, and qemu).
+
+        <p>
+        <a href="/Articles/804775/">Full Story</a> (<a href="/Articles/804775/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Debian reconsiders init-system diversity</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Distributions] Posted Nov 12, 2019 2:17 UTC (Tue) by corbet</font>
+        <p>
+        Many community-based Linux distributions have made the decision to switch
+to systemd, and most of those decisions were accompanied by lengthy,
+sometimes acrimonious mailing-list discussions. No distribution had a
+harder time of it than Debian, though, where arguments raged through much
+of 2013 before the Debian Technical Committee <a
+href="/Articles/585319/">decided</a> on systemd in early 2014.  Thereafter,
+it is fair to say,
+appetite for renewing the init-system discussion has been low.  Now,
+though, the topic has returned to the fore and
+it would appear that the project is heading toward a new general
+resolution to decide at what level init systems other than systemd should
+be supported.
+
+        <p>
+        <a href="/Articles/804254/">Full Story</a> (<a href="/Articles/804254/#Comments">comments: 152</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Announcing the Bytecode Alliance</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Development] Posted Nov 13, 2019 17:47 UTC (Wed) by ris</font>
+        <p>
+        The <a href="https://bytecodealliance.org/">Bytecode Alliance</a> is an
+industry partnership with the aim of forging <a
+href="https://webassembly.org/">WebAssembly</a>’s outside-the-browser
+future by collaborating on implementing standards and proposing new
+ones. The <a
+href="https://bytecodealliance.org/articles/announcing-the-bytecode-alliance">newly
+formed alliance</a> has "<span>a vision of a WebAssembly ecosystem that is
+secure by default, fixing cracks in today’s software
+foundations</span>". The alliance is currently working on a standalone
+WebAssembly runtime, two use-case specific runtimes, runtime components,
+and language tooling.
+        <p>
+        <a href="/Articles/804648/">Comments (26 posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Emulated iopl()</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 8, 2019 17:37 UTC (Fri) by corbet</font>
+        <p>
+        Operating systems and computing hardware both carry a lot of their history
+with them.  The x86 I/O-port mechanism is one piece of that history; it is
+rarely used by hardware designed in the last 20 years, but it must
+still be supported.  That doesn't mean that this support can't be cleaned
+up and improved, though, especially when the old implementation turns out
+to have some unpleasant properties.  An example can be seen in <a
+href="/ml/linux-kernel/20191106193459.581614484@linutronix.de/">the
+<tt>iopl()</tt> patch set</a> from Thomas Gleixner.
+
+        <p>
+        <a href="/Articles/804143/">Full Story</a> (<a href="/Articles/804143/#Comments">comments: 8</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Wednesday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 13, 2019 16:07 UTC (Wed) by ris</font>
+        <p>
+        Security updates have been issued by <b>Debian</b> (dpdk, intel-microcode, kernel, libssh2, qemu, and webkit2gtk), <b>Fedora</b> (apache-commons-beanutils, bluez, iwd, kernel, kernel-headers, kernel-tools, libell, and microcode_ctl), <b>openSUSE</b> (gdb), <b>Oracle</b> (kernel), <b>Red Hat</b> (kernel and kernel-rt), <b>SUSE</b> (dhcp, evolution, kernel, libcaca, python, python-xdg, qemu, sysstat, ucode-intel, and xen), and <b>Ubuntu</b> (dpdk, intel-microcode, kernel, linux, linux-aws, linux-kvm, linux, linux-lts-trusty, linux-azure, linux-hwe, linux-kvm, linux-oem, linux-oracle, linux-kvm, linux-oem-osp1, linux-oracle, linux-raspi2, linux-lts-xenial, linux-aws, linux-raspi2, and webkit2gtk).
+
+        <p>
+        <a href="/Articles/804641/">Full Story</a> (<a href="/Articles/804641/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Statistics from the 5.4 development cycle</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 7, 2019 22:27 UTC (Thu) by corbet</font>
+        <p>
+        As of this writing, just over 14,000 non-merge changesets have found their
+way into the mainline repository for the 5.4 release; that is a bit less
+than we saw for 5.3, but more than most of the other recent kernels.  The
+final 5.4 release is approaching, so it must be time for our usual look at
+where the code merged in this development cycle came from.  It's mostly
+business as usual in the kernel community, modulo an appearance from none
+other than Hulk Robot.
+
+        <p>
+        <a href="/Articles/804119/">Full Story</a> (<a href="/Articles/804119/#Comments">comments: 7</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>This week's hardware vulnerabilities</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 12, 2019 20:48 UTC (Tue) by corbet</font>
+        <p>
+        A set of patches has just been pushed into the mainline repository (and
+stable updates) for yet
+another set of hardware vulnerabilities.  "TSX async abort" (or TAA)
+exposes information through the usual side channels by way of internal
+buffers used with the transactional memory (TSX) instructions.  Mitigation
+is done by disabling TSX or by clearing the relevant buffers when switching
+between kernel and user mode.  Given that this is not the first problem
+with TSX, disabling it entirely is recommended; a microcode update may be
+needed to do so, though.  <a
+href="https://git.kernel.org/linus/a7a248c593e4">This commit</a> contains
+documentation on this vulnerability and its mitigation.
+<p>
+There are also fixes for <a
+href="https://git.kernel.org/linus/7f00cc8d4a51">another vulnerability</a>:
+it seems that accessing a memory address immediately after the size of the
+page containing it was changed (from a regular to a huge page, for
+example) can cause the processor to lock up.  This behavior is considered
+undesirable by many.  The vulnerability only
+exists for pages marked as executable; the mitigation is to force all
+executable pages to be the regular, 4K page size.
+        <p>
+        <a href="/Articles/804462/#Comments">Comments (19 posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>LWN.net Weekly Edition for November 7, 2019</b></div>
+        
+        <font size="-1">Posted Nov 7, 2019 1:05 UTC (Thu)</font><p>
+        The LWN.net Weekly Edition for November 7, 2019 is available.
+<p>
+        <b>Inside this week's LWN.net Weekly Edition</b>
+        <ul>
+<li> <a href="/Articles/803668/">Front</a>: FOSSology; SandFS; Kernel workflow; Finding buggy patches with machine learning; Address-space isolation.
+            <li> <a href="/Articles/803670/">Briefs</a>: RHEL 8.1; Git 2.24; Python 12-month releases; Quotes; ...
+            <li> <a href="/Articles/803671/">Announcements</a>: Newsletters; conferences; security updates; kernel patches; ...
+            </ul>
+<a href="/Articles/803668/">Read more</a>
+<p>
+
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Stable kernel updates</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 12, 2019 20:45 UTC (Tue) by ris</font>
+        <p>
+        Stable kernels <a href="/Articles/804464/">5.3.11</a>, <a
+href="/Articles/804465/">4.19.84</a>, <a
+href="/Articles/804466/">4.14.154</a>, <a
+href="/Articles/804467/">4.9.201</a>, and <a
+href="/Articles/804468/">4.4.201</a> have been released. They all contain
+important fixes and users should upgrade.
+        <p>
+        <a href="/Articles/804463/">Comments (none posted)</a>
+<p>
+</div>
+</div>
+<p><a href="/Articles/?offset=6">--&gt; More news items</a>
+       
+</div> <!-- ArticleText -->
+</div>
+<div class="lwn-u-1 pure-u-md-1-6 not-print">
+<div id="azk93271_right_zone"></div>
+</div>
+</div> <!-- pure-grid -->
+
+        <br clear="all">
+        <center>
+        <P>
+        <font size="-2">
+        Copyright &copy; 2019, Eklektix, Inc.<BR>
+        
+        Comments and public postings are copyrighted by their creators.<br>
+        Linux  is a registered trademark of Linus Torvalds<br>
+        </font>
+        </center>
+        
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-2039382-1");
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+            
+        </body></html>
+        

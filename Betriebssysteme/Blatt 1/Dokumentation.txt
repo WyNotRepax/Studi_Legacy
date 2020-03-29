@@ -1,0 +1,202 @@
+Betriebssysteme
+
+Benno Steinkamp 855624
+
+Aufgabe 1.1: 01.10.2019
+	man:
+		man <Seite>
+		Seite := (Befehl|Systemaufruf)
+		Zeigt die Handbuchseite für den Angegebenen Befehl/Systemaufruf an.
+		Enthält alle Informationen für die Nutzung.
+
+	uname:
+		Gibt Systeminformationen aus.
+			uname =>
+				Linux
+			uname -a =>
+				Linux si0024-18a 4.15.0-58-generic #64~16.04.1-Ubuntu SMP Wed Aug 7 14:10:35 UTC 2019 x86_64 x86_64 x86_64 GNU/Linux
+	whatis/which:
+		whatis <Name>
+		Durchsucht Handbuch nach "Name" und zeigt alle Kurzbeschreibungen an und in Welchem abschnitt diese stehen.
+			whatis man => 
+				man (1)              - eine Oberfläche für die Online-Referenzhandbücher
+				man (7)              - macros to format man pages
+			whatis ls =>
+				ls (1)               - list directory contents
+		which <Befehl>
+		Zeigt Speicherort des Befehls an.
+			which bash =>
+				/bin/bash
+			which man =>
+				/usr/bin/man
+	ps:
+		ps
+		Gibt Information über den derzeitigen Prozess aus.
+			ps =>
+				  PID TTY          TIME CMD
+				 3121 pts/2    00:00:00 bash
+				 4495 pts/2    00:00:00 ps
+			ps -l => 
+				F S   UID   PID  PPID  C PRI  NI ADDR SZ WCHAN  TTY          TIME CMD
+				0 S 33373  3121  3116  0  80   0 -  8889 wait   pts/2    00:00:00 bash
+				4 R 33373  4563  3121  0  80   0 -  7765 -      pts/2    00:00:00 ps
+	cd:
+		cd <Verzeichnis>
+		cd -> Change Directory
+		Wechselt in Verzeichnis
+			cd .. -> Verzeichnis nach oben
+			cd . -> Verzeichnis Bleibt gleich
+		
+	ls:
+		ls <Ordner>
+		ls -> list
+		Gibt Ihalt eines Ordners an.
+		
+			ls =>
+				BS_WiSe19_Blatt_1_Aufgabe.pdf
+				BS_WiSe19_Blatt_1_Hinweise_UNIX_Shell.pdf
+				Dokumentation.txt
+				input
+				temp.txt
+			ls -l =>
+				insgesamt 3184
+				-rw-r--r-- 1 bsteinka users  957099 Okt  1 10:07 BS_WiSe19_Blatt_1_Aufgabe.pdf
+				-rw-r--r-- 1 bsteinka users 1083961 Okt  1 10:08 BS_WiSe19_Blatt_1_Hinweise_UNIX_Shell.pdf
+				-rw-r--r-- 1 bsteinka users    1509 Okt  1 11:25 Dokumentation.txt
+				drwxr-xr-x 2 bsteinka users      63 Okt  1 10:50 input
+				-rw-r--r-- 1 bsteinka users       0 Okt  1 11:27 temp.txt
+			ls .. -R =>
+				..:
+				Blatt 1
+
+				../Blatt 1:
+				BS_WiSe19_Blatt_1_Aufgabe.pdf
+				BS_WiSe19_Blatt_1_Hinweise_UNIX_Shell.pdf
+				Dokumentation.txt
+				input
+				temp.txt
+
+				../Blatt 1/input:
+				dirStruct.tar.gz
+				file.tar.gz
+	mkdir:
+		mkdir <Ordnername>
+		mkdir -> Make Directory
+		Erstellt Ordner.
+			ls =>
+				BS_WiSe19_Blatt_1_Aufgabe.pdf
+				BS_WiSe19_Blatt_1_Hinweise_UNIX_Shell.pdf
+				Dokumentation.txt
+				input/
+				temp.txt
+			mkdir temp
+			ls =>
+				BS_WiSe19_Blatt_1_Aufgabe.pdf
+				BS_WiSe19_Blatt_1_Hinweise_UNIX_Shell.pdf
+				Dokumentation.txt
+				input/
+				temp/
+				temp.txt
+	rm:
+		rm <Dateiname/Ordnername>
+		rm -> remove
+		Entfernt Dateien/Ordner
+			rm temp.txt =>
+				Entfernt "temp.txt"
+			rm temp =>
+				rm: cannot remove 'temp': Is a directory
+			rm -R temp =>
+				Entfernt "temp" und alle Dateien in "temp"
+			rm -i => Nachfrage für jede Datei
+			rm -I => Nachfrage für mehr als 3 Dateien
+	cp:
+		cp <Quelle> <Ziel>
+		cp -> copy
+		Äquivalent zu Copy&Paste
+		Kopiert Dateien/Ordner
+			cp temp.txt tomp.txt =>
+				Kopiert "temp.txt" und bennent die Ausgabedatei "tomp.txt"
+			cp temp.txt temp =>
+				"temp.txt" wird in den Ordner temp verschoben und behält den Namen bei
+				(Wenn der Ordner temp nicht existiert wird "temp.txt" im Selben ordner Kopiert und die Ausgabedatei heißt "temp")
+	mv:
+		mv <Quelle> <Ziel>
+		mv-> move
+		Verschiebt Datei/Ordner
+		Äquivlent zu Cut&Paste
+		Kann zum umbenennen von Dateien/Ordnern Verwendet werden
+			mv temp.txt tomp.txt =>
+				"temp.txt" wird in "tomp.txt" umbenannt
+			mv tomp.txt temp =>
+				"tomp.txt" wird in den Ordner temp verschoben und behält den Namen bei
+
+	more:
+		more <Dateiname>
+		Ausgabe von Textdateien
+			more Dokumentation.txt =>
+				Gibt inhalt von "Dokumentation.txt" aus
+			more +10 Dokumentation.txt =>
+				Gibt inhalt von "Dokumentation.txt" aus ab der zehnten Zeile
+	cat:
+		cat <Dateiname> <Dateiname...>
+		Ausgabe mehrerer Textdateien hinereinander
+			cat Dokumentation.txt =>
+				Gibt inhalt von "Dokumentation.txt" aus
+			cat Dokumentation.txt temp.txt =>
+				Gibt inhalt von "Dokumentation.txt" und dann "temp.txt" aus
+	head:
+		head <Dateiname> <Dateiname...>
+		Gibt den Anfang von Dateien aus
+		Bei mehreren Dateien Dateiname vor dem jeweiligen Abschnitt
+			head Dokumentation.txt =>
+				Gibt die ersten 10 Zeilen von "Dokumentation.txt" aus
+			head -n 3 Dokumentation.txt =>
+				Gibt die ersten 3 Zeilen von "Dokumentation.txt" aus
+	tail:
+		tail <Dateiname> <Dateiname...>
+		Gibt Ende von Dateien aus
+		Sonst wie head
+	tar:
+		Entfernen/Hinzufügen von Dateien aus einem tar Archiv
+		tar -A => Hinzufügen
+		tar -x => Entfernen
+	gzip:
+		Komprimieren von Dateien (Dateiarchiven)
+		gzip <Dateiname>
+		gunzip <Dateiname>
+Aufgabe 1.2: 5.10.2019
+	man 2 print
+	Die Zweite Section der Dokumentation enthält die Systemaufrufe.
+Aufgabe 2.1: 5.10.2019
+	cd input
+	gunzip file.tar.gz	
+	mkdir file
+	cd file
+	tar -x -f ../file.tar
+	ls => '*file1'  '?file1'   1file1   2file1   3file1   foo_file1 <- Metazeichen werden mit Anführungsstrichen escaped
+	rm "?file1"
+	ls 0> '*file1'   1file1   2file1   3file1   foo_file1
+Aufgabe 2.2:
+	cd input
+	gunzip dirStruct.tar.gz
+	mkdir dirStruct
+	cd dirStruct
+	tar -x -f ../dirStruct.tar
+	rm -r rootTemp
+
+	Der Befehl "rm * .txt" hat hier keine Auswirkungen, da rm ohne weitere Parameter keine Ordner löscht. Hätten sich im Verzeichnis nicht nur Ordner, sondern auch Dateien befunden, wären diese Gelöscht worden. Dies ist nicht umkehrbar.
+Aufgabe 3:
+	find -> Finde
+	. -> in diesem Ordner und allen Unterordnern
+	-mtime -> nur mindestens
+	+365 -> 365 Tage alte
+	-type f -> Dateien
+	-name -> dessen Name
+	"*.class" -> auf .class Endet
+	-exec -> und Rufe den Befehl
+	rm -> Löschen
+	-i -> mit Nachfrage
+	{} -> auf den Dateien auf
+	\ -> Ende des execs
+	; -> Ende des Befehls
+	

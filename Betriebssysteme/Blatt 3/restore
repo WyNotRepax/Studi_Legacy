@@ -1,0 +1,44 @@
+#!/bin/bash
+
+TRASHBIN=$HOME/.trashBin
+
+function restore {	
+	ABSPATH=$(readlink -f $1)
+	POSSFILES=()
+	while read ZEILENINHALT
+	do
+		ZEILENINHALTLISTE=($ZEILENINHALT)
+		FILENAME=${ZEILENINHALTLISTE[0]}
+		FILEPATH=${ZEILENINHALTLISTE[@]:1}
+		if [ "$FILEPATH" == "$ABSPATH" ]; then
+			POSSFILES+=( $FILENAME )
+		fi 
+	done < $TRASHBIN/.dir
+
+	if [ ! ${#POSSFILES[@]} == 0 ]
+		then
+			echo "Datei zur wiederherstellung auswählen:"
+			select TORESTORE in ${POSSFILES[@]}
+			do
+				if [ $TORESTORE ]
+					then
+						if [ -e "$FILEPATH" ]
+							then
+								echo "\"$FILEPATH\" existiert Bereits!"
+								break
+							fi
+						mv "$TRASHBIN/$TORESTORE" "$FILEPATH"
+						sed -i "/$TORESTORE*/d" $TRASHBIN/.dir
+						break
+					fi
+			done
+		else
+			echo "Keine Wiederherstellungsdatei für \"$ABSPATH\" gefunden!"
+		fi
+}
+
+
+for FILE in $@
+	do
+		restore $FILE
+	done

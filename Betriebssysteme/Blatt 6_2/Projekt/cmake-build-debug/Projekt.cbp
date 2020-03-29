@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="Projekt"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="rebuild_cache">
+				<Option working_dir="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 rebuild_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Projekt">
+				<Option output="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug/Projekt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include"/>
+					<Add directory="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl"/>
+					<Add directory="."/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projekt"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="Projekt/fast">
+				<Option output="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug/Projekt" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add directory="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include"/>
+					<Add directory="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl"/>
+					<Add directory="."/>
+					<Add directory="/usr/local/cuda/include"/>
+					<Add directory="/usr/include/c++/5"/>
+					<Add directory="/usr/include/x86_64-linux-gnu/c++/5"/>
+					<Add directory="/usr/include/c++/5/backward"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include"/>
+					<Add directory="/usr/local/include"/>
+					<Add directory="/usr/lib/gcc/x86_64-linux-gnu/5/include-fixed"/>
+					<Add directory="/usr/include/x86_64-linux-gnu"/>
+					<Add directory="/usr/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 Projekt/fast"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="edit_cache">
+				<Option working_dir="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/cmake-build-debug"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 edit_cache"/>
+					<CompileFile command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="/usr/bin/make -j8 -f &quot;/home/bsteinka/Studi/Betriebssysteme/Blatt\ 6_2/Projekt/cmake-build-debug/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/curl.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/curlver.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/easy.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/mprintf.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/multi.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/stdcheaders.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/system.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/typecheck-gcc.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/curl/urlapi.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/prosumer.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/web_request.h">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/include/web_request.hpp">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/lib/web_request.c">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/simple_bot.c">
+			<Option target="Projekt"/>
+		</Unit>
+		<Unit filename="/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

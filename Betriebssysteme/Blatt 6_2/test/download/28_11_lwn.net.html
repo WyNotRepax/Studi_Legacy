@@ -1,0 +1,493 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+        "http://www.w3.org/TR/html4/loose.dtd">
+        <html lang="en">
+        <head><title>Welcome to LWN.net [LWN.net]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+<meta HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=utf-8">
+        <link rel="icon" href="/images/favicon.png" type="image/png">
+        <link rel="alternate" type="application/rss+xml" title="LWN.net headlines" href="https://lwn.net/headlines/newrss">
+        <link rel="stylesheet" href="/CSS/lwn">
+<link rel="stylesheet" href="/CSS/nosub">
+<link rel="stylesheet" href="/CSS/pure-min">
+           <!--[if lte IE 8]>
+             <link rel="stylesheet" href="/CSS/grids-responsive-old-ie-min">
+           <![endif]-->
+           <!--[if gt IE 8]><!-->
+             <link rel="stylesheet" href="/CSS/grids-responsive-min">
+           <!--<![endif]-->
+           <link rel="stylesheet" href="/CSS/pure-lwn">
+           
+        
+<script type="text/javascript">var p="http",d="static";if(document.location.protocol=="https:"){p+="s";d="engine";}var z=document.createElement("script");z.type="text/javascript";z.async=true;z.src=p+"://"+d+".adzerk.net/ados.js";var s=document.getElementsByTagName("script")[0];s.parentNode.insertBefore(z,s);</script>
+<script type="text/javascript">
+var ados_keywords = ados_keywords || [];
+if( location.protocol=='https:' ) {
+        ados_keywords.push('T:SSL');
+} else {
+        ados_keywords.push('T:HTTP');
+}
+
+var ados = ados || {};
+ados.run = ados.run || [];
+ados.run.push(function() {
+
+ados_add_placement(4669, 20979, "azk13321_leaderboard", 4).setZone(16026);
+
+ados_add_placement(4669, 20979, "azk93271_right_zone", [5,10,6]).setZone(16027);
+
+ados_add_placement(4669, 20979, "azk31017_tracking", 20).setZone(20995);
+
+ados_keywords.push('S:Homepage');
+
+ados_setKeywords(ados_keywords.join(', ')); 
+ados_load();
+});</script>
+
+        </head>
+        <body bgcolor="#ffffff" link="Blue" VLINK="Green" alink="Green">
+        <a name="t"></a>
+<div id="menu"><a href="/"><img src="https://static.lwn.net/images/logo/barepenguin-70.png" class="logo"
+                 border="0" alt="LWN.net Logo">
+           <font class="logo">LWN<br>.net</font>
+           <font class="logobl">News from the source</font></a>
+           <a href="/"><img src="https://static.lwn.net/images/lcorner-ss.png" class="sslogo"
+                 border="0" alt="LWN"></a><div class="navmenu-container">
+           <ul class="navmenu">
+        <li><a class="navmenu" href="#t"><b>Content</b></a><ul><li><a href="/current/">Weekly Edition</a></li><li><a href="/Archives/">Archives</a></li><li><a href="/Search/">Search</a></li><li><a href="/Kernel/">Kernel</a></li><li><a href="/Security/">Security</a></li><li><a href="/Distributions/">Distributions</a></li><li><a href="/Calendar/">Events calendar</a></li><li><a href="/Comments/unread">Unread comments</a></li><li><hr></li><li><a href="/op/FAQ.lwn">LWN FAQ</a></li><li><a href="/op/AuthorGuide.lwn">Write for us</a></li></ul></li>
+</ul></div>
+</div> <!-- menu -->
+<div class="pure-g not-handset" style="margin-left: 10.5em">
+           <div class="not-print">
+             <div id="azk13321_leaderboard"></div>
+           </div>
+           </div>
+        <div class="topnav-container">
+<div class="not-handset"><form action="https://lwn.net/Login/" method="post" name="loginform"
+                 class="loginform">
+        <b>User:</b> <input type="text" name="Username" value="" size="8" /> <b>Password:</b> <input type="password" name="Password" size="8" /> <input type="hidden" name="target" value="" /> <input type="submit" name="submit" value="Log in" /></form> |
+           <form action="https://lwn.net/subscribe/" method="post" class="loginform">
+           <input type="submit" name="submit" value="Subscribe" />
+           </form> |
+           <form action="https://lwn.net/Login/newaccount" method="post" class="loginform">
+           <input type="submit" name="submit" value="Register" />
+           </form>
+        </div>
+               <div class="handset-only">
+               <a href="/subscribe/"><b>Subscribe</b></a> /
+               <a href="/Login/"><b>Log in</b></a> /
+               <a href="/Login/newaccount"><b>New account</b></a>
+               </div>
+               </div><div class="pure-grid maincolumn">
+<div class="lwn-u-1 pure-u-md-19-24">
+<div class="PageHeadline">
+<h1>Welcome to LWN.net</h1>
+</div>
+<div class="ArticleText">
+<div class="pure-u-1">
+       <blockquote style="margin-top: 0">
+       LWN.net is a reader-supported news site dedicated to producing the best
+       coverage from within the Linux and free software development communities.
+       See <a href="/op/FAQ.lwn">the LWN FAQ</a> for more information, and
+       please consider <a href="/subscribe/Info">subscribing</a> to gain full
+       access and support our activities.
+       </blockquote>
+       <p>
+       </div><div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Virtio without the &quot;virt&quot;</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 22, 2019 21:19 UTC (Fri) by jake</font>
+        <p>
+        When <a href="https://www.linux-kvm.org/page/Virtio">virtio</a>
+was merged in Linux v2.6.24, its author, Rusty Russell, <a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ec3d41c4db4c">described 
+the goal</a> as being for "<span>common drivers to be efficiently used
+across most virtual I/O 
+mechanisms</span>".  Today, much progress has been made toward that goal, with virtio
+supported by multiple hypervisors and guest drivers shipped by many operating
+systems.  But these applications of virtio are implemented in software, whereas
+Michael Tsirkin's "<a
+href="https://kvmforum2019.sched.com/event/TmxF/virtio-without-the-virt-towards-implementations-in-hardware-michael-tsirkin-red-hat">VirtIO
+without the Virt</a>" talk at KVM Forum 2019 laid out how
+to implement virtio in hardware.
+
+        <p>
+        <a href="/Articles/805235/">Full Story</a> (<a href="/Articles/805235/#Comments">comments: 4</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Stable kernel updates</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 25, 2019 15:42 UTC (Mon) by ris</font>
+        <p>
+        Stable kernels <a href="/Articles/805530/">5.3.13</a>, <a
+href="/Articles/805531/">4.19.86</a>, <a
+href="/Articles/805532/">4.14.156</a>, <a
+href="/Articles/805533/">4.9.203</a>, and <a
+href="/Articles/805554/">4.4.203</a> have been released. They all contain
+important fixes and users should upgrade.
+        <p>
+        <a href="/Articles/805529/">Comments (none posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Fedora's modularity mess</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Distributions] Posted Nov 21, 2019 18:24 UTC (Thu) by corbet</font>
+        <p>
+        Fedora's <a href="https://docs.pagure.org/modularity/">Modularity
+initiative</a> has been no stranger to controversy since its <a
+href="/Articles/680278/">inception</a> in 2016.  Among other things, there
+were enough problems with the original design that Modularity <a
+href="/Articles/742497/">went back to the drawing board</a> in early 2018.
+Modularity has since been integrated with both the Fedora and Red Hat
+Enterprise Linux (RHEL) distributions, but the controversy continues, with
+some developers asking whether it's time for yet another redesign — or to
+abandon the idea altogether.  Over the last month or so, several lengthy,
+detailed, and heated threads have explored this issue; read on for your
+editor's attempt to integrate what was said.
+
+        <p>
+        <a href="/Articles/805180/">Full Story</a> (<a href="/Articles/805180/#Comments">comments: 36</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Monday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 25, 2019 15:33 UTC (Mon) by ris</font>
+        <p>
+        Security updates have been issued by <b>Debian</b> (chromium, enigmail, isc-dhcp, libice, libofx, and pam-python), <b>Fedora</b> (chromium, ghostscript, mingw-cfitsio, mingw-gdal, mingw-libidn2, and rsyslog), <b>Gentoo</b> (adobe-flash, chromium, expat, and firefox), <b>openSUSE</b> (apache2-mod_perl, haproxy, java-11-openjdk, and ncurses), <b>Oracle</b> (ghostscript, kernel, php:7.2, php:7.3, and sudo), <b>Red Hat</b> (chromium-browser, python27-python, and SDL), and <b>Ubuntu</b> (dpdk and libvpx).
+
+        <p>
+        <a href="/Articles/805527/">Full Story</a> (<a href="/Articles/805527/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] LWN.net Weekly Edition for November 21, 2019</b></div>
+        
+        <font size="-1">Posted Nov 21, 2019 0:48 UTC (Thu)</font><p>
+        The LWN.net Weekly Edition for November 21, 2019 is available.
+<p>
+        <b>Inside this week's LWN.net Weekly Edition</b>
+        <ul>
+<li> <a href="/Articles/804784/">Front</a>: LSM stacking; KVM forum; KVM guest protection; Arm64 hardening; Protecting memory contents; Yocto Project 3.0.
+            <li> <a href="/Articles/804786/">Briefs</a>: Security things in Linux 5.3; SystemTap 4.2; Quotes; ...
+            <li> <a href="/Articles/804787/">Announcements</a>: Newsletters; conferences; security updates; kernel patches; ...
+            </ul>
+<a href="/Articles/804784/">Read more</a>
+<p>
+
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>The 5.4 kernel has been released</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 25, 2019 3:28 UTC (Mon) by corbet</font>
+        <p>
+        Linus has <a href="/Articles/805461/">released</a> the 5.4 kernel.
+"<span>Not a lot happened this last week, which is just how I like
+it</span>".  Significant features in this release include
+the <a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=2cffe9f6b96f">haltpoll</a>
+CPU governor,
+the iocost (formerly <a href="/Articles/792256/">io.weight</a>) I/O
+controller,
+the <a href="/Articles/796687/">EROFS filesystem</a>,
+an <a href="/Articles/797963/">implementation of the exFAT filesystem</a>
+that may yet be superseded by a better version,
+the <a href="/Articles/790185/">fs-verity</a> file integrity mechanism,
+support for the <a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=ddc7c3042614">BPF
+compile once, run everywhere</a> mechanism,
+the <a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=7431b7835f55">dm-clone</a>
+device mapper target,
+the <a
+href="https://git.kernel.org/pub/scm/linux/kernel/git/torvalds/linux.git/commit/?id=2d1d25d0a224">virtiofs</a>
+filesystem,
+<a href="/Articles/791863/">kernel lockdown support</a> (at last),
+<a href="/Articles/760045/">kernel symbol namespaces</a>, and a new
+<a href="/Articles/802360/">random-number generator</a> meant to solve the
+early-boot entropy problem.
+See <a href="https://kernelnewbies.org/Linux_5.4">the KernelNewbies 5.4
+page</a> for a lot more details.
+        <p>
+        <a href="/Articles/805462/#Comments">Comments (none posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] LSM stacking and the future</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 20, 2019 20:19 UTC (Wed) by jake</font>
+        <p>
+        The idea of stacking (or chaining) Linux
+security modules (LSMs) <a href="/Articles/114588/">goes back 
+15 years</a> (at least) at this point; <a href="/Articles/635771/">progress</a>
+has definitely been made along 
+the way, especially in the last decade or so.  It has been possible to
+stack "minor" LSMs with one major LSM (e.g. SELinux, Smack, or AppArmor) for
+some time, but mixing, say, SELinux and AppArmor in the same 
+system has not been possible.  Combining major security solutions may not
+seem like a truly important feature, but there is a use case where it is
+pretty clearly needed: containers.  Longtime LSM stacker (and Smack
+maintainer) Casey Schaufler
+gave a presentation at the <a
+href="https://events19.linuxfoundation.org/events/linux-security-summit-europe-2019/">2019
+Linux Security Summit Europe</a> to report on the status and plans for
+allowing arbitrary LSM stacking.
+
+        <p>
+        <a href="/Articles/804906/">Full Story</a> (<a href="/Articles/804906/#Comments">comments: 22</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Friday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 22, 2019 14:32 UTC (Fri) by jake</font>
+        <p>
+        Security updates have been issued by <b>Fedora</b> (dpdk, mingw-djvulibre, mingw-hunspell, mingw-ilmbase, mingw-OpenEXR, php-symfony, php-symfony3, and rsyslog), <b>openSUSE</b> (chromium and squid), <b>SUSE</b> (aspell, cups, djvulibre, and dpdk), and <b>Ubuntu</b> (djvulibre).
+
+        <p>
+        <a href="/Articles/805367/">Full Story</a> (<a href="/Articles/805367/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Enhancing KVM for guest protection and security</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 20, 2019 14:03 UTC (Wed) by jake</font>
+        <p>
+        A key tenet in KVM is to reuse as much Linux infrastructure as possible
+and focus specifically on processor virtualization. Back in 2007, this
+meant a smaller code base and less friction with the other kernel
+subsystems, especially when compared with other virtualization technologies
+such as Xen. This led to KVM being merged into the mainline with relative
+ease.  A talk at this year's KVM Forum looks at ways to better protect
+guests, perhaps by moving away from that tenet.
+
+        <p>
+        <a href="/Articles/805114/">Full Story</a> (<a href="/Articles/805114/#Comments">comments: 3</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Bad Binder: Android In-The-Wild Exploit (Project Zero)</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 21, 2019 23:46 UTC (Thu) by jake</font>
+        <p>
+        Over on the Project Zero blog, Maddie Stone has a <a href="https://googleprojectzero.blogspot.com/2019/11/bad-binder-android-in-wild-exploit.html">lengthy post</a> about a zero-day exploit that was found and fixed in the <a href="https://elinux.org/Android_Binder">Android Binder</a> interprocess communication mechanism.   The post details the search for the problem, which was apparently being used in the wild, its fix, and how it can be exploited.  This is all part of an effort to "<span>make zero-day hard</span>"; one of the steps the project is taking is to disseminate more information on these bugs. "<span>Complete detailed analysis of the 0-days from the point of view of bug hunters and exploit developers and share it back with the community. Transparency and collaboration are key. We want to share detailed root cause analysis to inform developers and defenders on how to prevent these types of bugs in the future and improve detection. We hope that by publishing details about the exploit and its methodology, this can inform threat intelligence and incident responders. Overall, we want to make information that’s often kept in silos accessible to all.</span>"
+        <p>
+        <a href="/Articles/805321/#Comments">Comments (18 posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] A recap of KVM Forum 2019</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 19, 2019 17:00 UTC (Tue) by jake</font>
+        <p>
+        The 13th <a
+href="https://events19.linuxfoundation.org/events/kvm-forum-2019/">KVM
+Forum</a> virtualization conference took place in Lyon, France in October
+2019. One might think that development may have finished on the Kernel
+Virtual Machine (KVM) module that was merged in Linux 2.6.20 in 2007, but
+this year's conference underscored the amount of work still being done,
+particularly on side-channel attack mitigation, I/O device assignment with
+VFIO and mdev, footprint reduction with micro virtual machines (VMs), and
+with the ability to 
+run VMs nested within VMs. Many talks also involved the virtual machine
+monitor (VMM) user-space programs that use the KVM kernel module—of which
+<a href="https://qemu.org/">QEMU</a> is the most widely used.
+
+        <p>
+        <a href="/Articles/805097/">Full Story</a> (<a href="/Articles/805097/#Comments">comments: 3</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Stable kernels 5.3.12, 4.19.85, and 4.14.155</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 21, 2019 14:55 UTC (Thu) by jake</font>
+        <p>
+        Greg Kroah-Hartman has announced the release of the <a
+href="/Articles/805283/">5.3.12</a>, <a
+href="/Articles/805284/">4.19.85</a>, and <a
+href="/Articles/805285/">4.14.155</a> stable kernels.  As usual, they
+contain fixes throughout the kernel tree; users of those series should upgrade.
+        <p>
+        <a href="/Articles/805282/">Comments (none posted)</a>
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Some near-term arm64 hardening patches</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 18, 2019 18:36 UTC (Mon) by corbet</font>
+        <p>
+        The arm64 architecture is found at the core of many, if not most, mobile
+devices; that means that arm64 devices are destined to be the target of
+attackers worldwide.  That has led to a high level of interest in
+technologies that can harden these systems.  There are currently several
+such technologies, based in both hardware and software, that are being
+readied for the arm64 kernel; read on for a survey on what is
+coming.
+
+        <p>
+        <a href="/Articles/804982/">Full Story</a> (<a href="/Articles/804982/#Comments">comments: 18</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Thursday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 21, 2019 14:33 UTC (Thu) by jake</font>
+        <p>
+        Security updates have been issued by <b>Fedora</b> (oniguruma and thunderbird-enigmail), <b>openSUSE</b> (chromium, ghostscript, and slurm), <b>Oracle</b> (kernel), <b>Red Hat</b> (kpatch-patch), <b>Slackware</b> (bind), <b>SUSE</b> (python-ecdsa), and <b>Ubuntu</b> (bind9 and mariadb).
+
+        <p>
+        <a href="/Articles/805281/">Full Story</a> (<a href="/Articles/805281/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] Keeping memory contents secret</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Kernel] Posted Nov 15, 2019 19:46 UTC (Fri) by corbet</font>
+        <p>
+        One of the many responsibilities of the operating system is to help
+processes keep secrets from each other.  Operating systems often fail in
+this regard, sometimes due to factors — such as hardware bugs and user-space
+vulnerabilities — that are beyond their direct control.  It is thus
+unsurprising that there is an increasing level of interest in ways to
+improve the ability to keep data secret, perhaps even from the operating
+system itself.  The <a
+href="/ml/linux-kernel/1572171452-7958-1-git-send-email-rppt@kernel.org/"><tt>MAP_EXCLUSIVE</tt></a>
+patch set from Mike Rapoport is one example of the work that is being done
+in this area; it also shows that the development community has not yet
+really begun to figure out how this type of feature should work.
+
+        <p>
+        <a href="/Articles/804658/">Full Story</a> (<a href="/Articles/804658/#Comments">comments: 14</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Wednesday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 20, 2019 15:43 UTC (Wed) by ris</font>
+        <p>
+        Security updates have been issued by <b>Debian</b> (redmine), <b>Fedora</b> (libidn2), <b>Mageia</b> (clamav, ghostscript, kernel, kernel-linus, libexif, libjpeg, mariadb, microcode, and systemd), and <b>openSUSE</b> (libjpeg-turbo).
+
+        <p>
+        <a href="/Articles/805224/">Full Story</a> (<a href="/Articles/805224/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>[<font class="Subscription">$</font>] The Yocto Project 3.0 release</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Distributions] Posted Nov 14, 2019 19:26 UTC (Thu) by corbet</font>
+        <p>
+        The <a href="https://www.yoctoproject.org">Yocto Project</a> recently
+announced <a
+href="https://lists.yoctoproject.org/pipermail/yocto-announce/2019-October/000169.html">its 
+3.0 release</a>, maintaining the spring/fall cadence it has followed for the
+past nine years. As well as the expected updates, it contains new thinking on
+getting the best of two worlds: source builds and prebuilt binaries. This
+fits well into a landscape where reproducibility and software traceability,
+all the way through to device updates, are increasingly important to handle
+complex security issues.
+
+        <p>
+        <a href="/Articles/804640/">Full Story</a> (<a href="/Articles/804640/#Comments">comments: 11</a>)
+<p>
+</div>
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>SystemTap 4.2 release</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Development] Posted Nov 19, 2019 18:49 UTC (Tue) by ris</font>
+        <p>
+        SystemTap 4.2 is out. This release features "<span>support for generating
+backtraces of different contexts; improved backtrace tapset to include file
+names and line numbers; eBPF support extensions including raw tracepoint
+access, prometheus exporter, procfs probes and improved looping
+structures</span>".
+
+        <p>
+        <a href="/Articles/805172/">Full Story</a> (<a href="/Articles/805172/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<div class="pure-u-1 pure-u-md-1-2 fp-feature">
+<div class="Headline"><b>LWN.net Weekly Edition for November 14, 2019</b></div>
+        
+        <font size="-1">Posted Nov 14, 2019 0:04 UTC (Thu)</font><p>
+        The LWN.net Weekly Edition for November 14, 2019 is available.
+<p>
+        <b>Inside this week's LWN.net Weekly Edition</b>
+        <ul>
+<li> <a href="/Articles/804120/">Front</a>: Debian init system; Kernel email; 5.4 stats; Emulated iopl(); Automated Testing Summit
+            <li> <a href="/Articles/804122/">Briefs</a>: Intel CPU flaws; openSUSE not changing name; Bytecode Alliance; Rust 1.39; Quote; ...
+            <li> <a href="/Articles/804123/">Announcements</a>: Newsletters; conferences; security updates; kernel patches; ...
+            </ul>
+<a href="/Articles/804120/">Read more</a>
+<p>
+
+</div><div class="pure-u-1 pure-u-md-11-24">
+<div class="Headline"><b>Security updates for Tuesday</b></div>
+        
+        <div class="BlurbListing">
+        <font size="-1">[Security] Posted Nov 19, 2019 15:25 UTC (Tue) by ris</font>
+        <p>
+        Security updates have been issued by <b>Debian</b> (python-psutil, slurm-llnl, symfony, and thunderbird), <b>Fedora</b> (gd and ghostscript), and <b>SUSE</b> (ceph, haproxy, java-11-openjdk, and ncurses).
+
+        <p>
+        <a href="/Articles/805149/">Full Story</a> (<a href="/Articles/805149/#Comments">comments: none</a>)
+<p>
+</div>
+</div>
+<p><a href="/Articles/?offset=6">--&gt; More news items</a>
+       
+</div> <!-- ArticleText -->
+</div>
+<div class="lwn-u-1 pure-u-md-1-6 not-print">
+<div id="azk93271_right_zone"></div>
+</div>
+</div> <!-- pure-grid -->
+
+        <br clear="all">
+        <center>
+        <P>
+        <font size="-2">
+        Copyright &copy; 2019, Eklektix, Inc.<BR>
+        
+        Comments and public postings are copyrighted by their creators.<br>
+        Linux  is a registered trademark of Linus Torvalds<br>
+        </font>
+        </center>
+        
+            <script type="text/javascript">
+            var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+            document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+            </script>
+            <script type="text/javascript">
+            try {
+            var pageTracker = _gat._getTracker("UA-2039382-1");
+            pageTracker._trackPageview();
+            } catch(err) {}</script>
+            
+        </body></html>
+        

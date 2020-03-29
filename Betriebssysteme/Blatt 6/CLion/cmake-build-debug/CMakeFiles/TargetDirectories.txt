@@ -1,0 +1,3 @@
+Z:/Studi/Betriebssysteme/Blatt 6/CLion/cmake-build-debug/CMakeFiles/CLion.dir
+Z:/Studi/Betriebssysteme/Blatt 6/CLion/cmake-build-debug/CMakeFiles/edit_cache.dir
+Z:/Studi/Betriebssysteme/Blatt 6/CLion/cmake-build-debug/CMakeFiles/rebuild_cache.dir

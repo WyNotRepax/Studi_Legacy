@@ -1,0 +1,55 @@
+The system is: Linux - 4.4.0-18362-Microsoft - x86_64
+Compiling the C compiler identification source file "CMakeCCompilerId.c" succeeded.
+Compiler: /usr/bin/cc 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the C compiler identification source "CMakeCCompilerId.c" produced "a.out"
+
+The C compiler identification is GNU, found in "/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/3.10.2/CompilerIdC/a.out"
+
+Determining if the C compiler works passed with the following output:
+Change Dir: /mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_93cc1/fast"
+/usr/bin/make -f CMakeFiles/cmTC_93cc1.dir/build.make CMakeFiles/cmTC_93cc1.dir/build
+make[1]: Entering directory '/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp'
+Building C object CMakeFiles/cmTC_93cc1.dir/testCCompiler.c.o
+/usr/bin/cc    -o CMakeFiles/cmTC_93cc1.dir/testCCompiler.c.o   -c "/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp/testCCompiler.c"
+Linking C executable cmTC_93cc1
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_93cc1.dir/link.txt --verbose=1
+/usr/bin/cc      -rdynamic CMakeFiles/cmTC_93cc1.dir/testCCompiler.c.o  -o cmTC_93cc1 
+make[1]: Leaving directory '/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp'
+
+
+Compiling the CXX compiler identification source file "CMakeCXXCompilerId.cpp" succeeded.
+Compiler: /usr/bin/c++ 
+Build flags: 
+Id flags:  
+
+The output was:
+0
+
+
+Compilation of the CXX compiler identification source "CMakeCXXCompilerId.cpp" produced "a.out"
+
+The CXX compiler identification is GNU, found in "/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/3.10.2/CompilerIdCXX/a.out"
+
+Determining if the CXX compiler works passed with the following output:
+Change Dir: /mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp
+
+Run Build Command:"/usr/bin/make" "cmTC_c1496/fast"
+/usr/bin/make -f CMakeFiles/cmTC_c1496.dir/build.make CMakeFiles/cmTC_c1496.dir/build
+make[1]: Entering directory '/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp'
+Building CXX object CMakeFiles/cmTC_c1496.dir/testCXXCompiler.cxx.o
+/usr/bin/c++     -o CMakeFiles/cmTC_c1496.dir/testCXXCompiler.cxx.o -c "/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp/testCXXCompiler.cxx"
+Linking CXX executable cmTC_c1496
+/usr/bin/cmake -E cmake_link_script CMakeFiles/cmTC_c1496.dir/link.txt --verbose=1
+/usr/bin/c++       -rdynamic CMakeFiles/cmTC_c1496.dir/testCXXCompiler.cxx.o  -o cmTC_c1496 
+make[1]: Leaving directory '/mnt/z/Studi/Betriebssysteme/Blatt 6/CLion/CMakeFiles/CMakeTmp'
+
+

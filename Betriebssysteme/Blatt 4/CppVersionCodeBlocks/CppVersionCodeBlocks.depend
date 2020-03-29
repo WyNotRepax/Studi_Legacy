@@ -1,0 +1,13 @@
+# depslib dependency file v1.0
+1573552877 source:/home/bsteinka/Studi/Betriebssysteme/Blatt 4/CppVersionCodeBlocks/main.cpp
+	<unistd.h>
+	<sys/types.h>
+	<sys/wait.h>
+	<signal.h>
+	<iostream>
+	<vector>
+	<string.h>
+	<stdio.h>
+	<cstdlib>
+	<sstream>
+

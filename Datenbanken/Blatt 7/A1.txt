@@ -1,0 +1,61 @@
+Schritt 0:
+	1. Spezialisierung von Entität Schwester aufheben
+		-> Schwester kriegt Attribut t (Typ)
+	2. Spezialisierung von Entität Arzt aufheben
+		-> Arzt kriegt Attribut t (Typ)
+	3. Spezialisierung von Krankenhauspersonal aufheben
+		-> Krankenhauspersonal kriegt Attribut t (Typ)
+		-> t von Arzt wird zu Arzt_t
+		-> t von Schwester wird zu Schwester_t
+	4. Spezialisierung von Zimmer aufheben
+		-> Zimmer kriegt Attribut t (Typ)
+		-> Zimmer übernimmt Bettenanzahl von Belegzimmer
+		
+Schritt 1:
+	1. Relationsschema für Krankenhauspersonal erzeugen
+		-> Attribute: t, Arzt_t, Schwester_t, Personalnr, Name
+		-> Schlüssel: Personalnr
+	2. Relationsschema für Krankenkasse erzeugen
+		-> Attribute: Kassennr, Hauptsitz
+		-> Schlüssel: Kassennr
+	3. Relationsschema für Station erzeugen
+		-> Attribute: Name, Stationsnummer
+		-> Schlüssel: Stationsnummer
+	4. Relationsschema für Zimmer erzeugen
+		-> Attribute: t, Zimmernummer, Bettenanzahl
+		-> Schlüssel: Zimmernummer
+
+Schritt 2:
+	1. Relationsschema für Patient erzeugen
+		-> Attribute: Mitgliedsnr, Name
+		-> Schlüssel: Mitgliedsnr
+	2. Fremdschlüssel Kassennr aus Krankenkasse zu Patient hinzufügen
+	3. Relationsschema für Fall erzeugen
+		-> Attribute: Einlieferungsdatum
+		-> Schlüssel: Einlieferungsdatum
+	4. Fremdschlüssel Kassennr aus Krankenkasse und Mitgliedsnr aus Patient zu Fall hinzufügen
+	5. Relationsschema für Diagnose erstellen
+		-> Attribute: Datum, Beschreibung
+		-> Schlüssel: Datum
+	6. Fremdschlüssel Kassennr aus Krankenkasse, Mitgliedsnr aus Patient und Einlieferungsdatum aus Fall zu Diagnose hinzufügen
+	
+Schritt 3:
+
+Schritt 4:
+	1. "Aufnahme durch" auflösen
+		-> Fall um Fremdschlüssel Personalnr aus Krankenhauspersonal erweitern als aufnahme_pnr
+	2. "stellt auf" auflösen
+		-> Diagnose um Fremdschlüssel Personalnr aus Krankenhauspersonal erweitern als arzt_pnr
+	3. "gehört zu" auflösen
+		-> Zimmer um Fremdschlüssel Stationsnummer erweitern
+	4. "liegt auf" auflösen
+		-> Fall um Fremdschlüssel Zimmernummer erweitern
+
+Schritt 5:
+	1. Relationsschema hat_schicht erzeugen
+		-> Attribute: Enddatum, Endzeit, Anfangszeit, Anfangsdatum
+	2. Fremdschlüssel Personalnr aus Krankenhauspersonal und Stationsnummer aus Station zu hat_schicht hinzufügen
+	
+Schritt 6:
+
+Schritt 7:

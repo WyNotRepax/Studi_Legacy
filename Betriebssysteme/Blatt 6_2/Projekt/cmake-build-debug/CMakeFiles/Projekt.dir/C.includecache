@@ -1,0 +1,38 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+../include/prosumer.h
+pthread.h
+-
+stdio.h
+-
+unistd.h
+-
+stdlib.h
+-
+
+../include/web_request.h
+
+/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/simple_bot.c
+malloc.h
+-
+stdio.h
+-
+stdlib.h
+-
+string.h
+-
+sys/time.h
+-
+pthread.h
+-
+prosumer.h
+/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/prosumer.h
+web_request.h
+/home/bsteinka/Studi/Betriebssysteme/Blatt 6_2/Projekt/web_request.h
+

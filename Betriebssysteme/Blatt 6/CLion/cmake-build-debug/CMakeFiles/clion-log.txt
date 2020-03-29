@@ -1,0 +1,4 @@
+Cannot generate into Z:\Studi\Betriebssysteme\Blatt 6\CLion
+It is already used for project \mnt\z\Studi\Betriebssysteme\Blatt 6\CLion
+
+Please either delete it manually or select another generation directory
